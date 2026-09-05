@@ -1,0 +1,482 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+<meta name="robots" content="noindex, nofollow" />
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<meta name="description" content="Contatti di Fabio Mennillo — ecologia del paesaggio, connettività ecologica urbana. Università di Napoli Federico II." />
+<meta name="theme-color" content="#f6f8f5" />
+<title>Fabio Mennillo — Contatti</title>
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🦔</text></svg>" />
+<style>
+  :root {
+    --bg: #f6f8f5;
+    --card: #ffffff;
+    --ink: #1b211d;
+    --ink-soft: #5b6660;
+    --ink-faded: #8d9791;
+    --accent: #3f7a3f;          /* verde bosco */
+    --accent-deep: #2e5c2f;
+    --accent-wash: #eaf1e8;
+    --blue: #2f5ea9;            /* blu delle figure */
+    --copper: #b85d17;          /* rame delle figure */
+    --line: #e3e8e1;
+    --shadow: 0 1px 2px rgba(27,33,29,.04), 0 8px 24px rgba(27,33,29,.06);
+    --radius: 14px;
+    --max: 480px;
+  }
+
+  * { box-sizing: border-box; margin: 0; padding: 0; -webkit-tap-highlight-color: transparent; }
+
+  html, body {
+    background: var(--bg);
+    color: var(--ink);
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    min-height: 100vh;
+    -webkit-font-smoothing: antialiased;
+  }
+  body { display: flex; justify-content: center; padding: 0 0 32px; }
+
+  .page {
+    width: 100%; max-width: var(--max);
+    background: var(--bg); position: relative; min-height: 100vh;
+  }
+
+  .serif { font-family: Georgia, "Iowan Old Style", "Times New Roman", serif; }
+
+  /* ---------------- SWITCH DOPPIO PROFILO ---------------- */
+  .switch {
+    display: flex; gap: 4px;
+    margin: 16px 24px 0; padding: 4px;
+    background: #eceee9; border-radius: 999px;
+  }
+  .switch button {
+    flex: 1; padding: 10px 8px;
+    border: none; background: transparent; cursor: pointer;
+    font: inherit; font-size: 13px; font-weight: 600;
+    color: var(--ink-soft); border-radius: 999px;
+    transition: background .18s ease, color .18s ease, box-shadow .18s ease;
+  }
+  .switch button[aria-selected="true"] {
+    background: var(--card); color: var(--ink);
+    box-shadow: 0 1px 3px rgba(27,33,29,.10);
+  }
+
+  /* ---------------- HERO ---------------- */
+  .hero { padding: 40px 28px 24px; text-align: center; position: relative; }
+  .hero::before {
+    content: ""; position: absolute; top: 0; left: 0; right: 0; height: 210px;
+    background: linear-gradient(180deg, var(--accent-wash) 0%, transparent 100%);
+    z-index: 0;
+  }
+  .hero > * { position: relative; z-index: 1; }
+
+  .avatar {
+    width: 112px; height: 112px; border-radius: 50%;
+    margin: 0 auto 20px; background: var(--card);
+    border: 1px solid var(--line); box-shadow: var(--shadow);
+    overflow: hidden; display: grid; place-items: center;
+    color: var(--accent); font-family: Georgia, serif;
+    font-size: 36px; font-weight: 500; letter-spacing: .02em;
+  }
+  .avatar img { width: 100%; height: 100%; object-fit: cover; }
+
+  .role-tag {
+    display: inline-block; font-size: 11px; font-weight: 600;
+    letter-spacing: .18em; text-transform: uppercase;
+    color: var(--accent-deep); margin-bottom: 12px;
+  }
+
+  .name { font-size: 31px; font-weight: 500; line-height: 1.12; color: var(--ink); }
+  .name .salutation {
+    display: block; font-size: 15px; font-style: italic;
+    color: var(--ink-soft); margin-bottom: 4px;
+  }
+  .subtitle { margin-top: 10px; font-size: 14.5px; color: var(--ink-soft); line-height: 1.5; }
+  .affil {
+    margin-top: 14px; font-size: 11px; letter-spacing: .1em;
+    text-transform: uppercase; color: var(--ink-faded); font-weight: 600;
+  }
+
+  /* ---------------- CTA ---------------- */
+  .save-cta { margin: 26px 24px 0; display: flex; flex-direction: column; gap: 10px; }
+
+  .btn-primary {
+    display: flex; align-items: center; justify-content: center; gap: 10px;
+    width: 100%; padding: 16px 20px;
+    background: var(--accent); color: #fff; border: none; border-radius: 999px;
+    font: inherit; font-size: 15px; font-weight: 600; cursor: pointer;
+    box-shadow: 0 6px 20px rgba(63,122,63,.25); text-decoration: none;
+    transition: transform .1s ease, box-shadow .1s ease;
+  }
+  .btn-primary:active { transform: translateY(1px); box-shadow: 0 3px 10px rgba(63,122,63,.2); }
+
+  .btn-ghost {
+    display: flex; align-items: center; justify-content: center; gap: 8px;
+    width: 100%; padding: 12px 18px;
+    background: transparent; color: var(--accent-deep);
+    border: 1px solid #cfdccd; border-radius: 999px;
+    font: inherit; font-size: 13.5px; font-weight: 600; cursor: pointer;
+    text-decoration: none; transition: background .15s ease;
+  }
+  .btn-ghost:active { background: var(--accent-wash); }
+
+  /* ---------------- SECTIONS ---------------- */
+  .section { padding: 30px 24px 0; }
+  .section-title {
+    font-size: 11px; font-weight: 700; letter-spacing: .18em;
+    text-transform: uppercase; color: var(--ink-faded);
+    margin-bottom: 14px; padding-left: 4px;
+  }
+
+  .rows { display: flex; flex-direction: column; gap: 8px; }
+  .row {
+    display: flex; align-items: center; gap: 14px; padding: 14px 16px;
+    background: var(--card); border: 1px solid var(--line);
+    border-radius: var(--radius); color: var(--ink); text-decoration: none;
+    transition: background .15s ease, transform .1s ease;
+  }
+  .row:active { background: var(--accent-wash); transform: translateY(1px); }
+  .row .ico {
+    width: 38px; height: 38px; border-radius: 50%;
+    background: var(--accent-wash); color: var(--accent-deep);
+    display: grid; place-items: center; flex: 0 0 38px;
+  }
+  .row .body { flex: 1; min-width: 0; display: flex; flex-direction: column; gap: 2px; }
+  .row .body .lbl {
+    font-size: 11px; letter-spacing: .1em; text-transform: uppercase;
+    color: var(--ink-faded); font-weight: 600;
+  }
+  /* L'email non va mai troncata: è il motivo per cui la pagina esiste.
+     Si manda a capo invece di finire in puntini di sospensione. */
+  .row .body .val {
+    font-size: 15px; color: var(--ink); font-weight: 500;
+    line-height: 1.35; overflow-wrap: anywhere;
+  }
+  .row .chev { color: var(--ink-faded); flex: 0 0 auto; }
+
+  /* ---------------- CARD EVENTO ---------------- */
+  .event {
+    margin: 30px 24px 0; padding: 20px;
+    background: var(--card); border: 1px solid var(--line);
+    border-left: 3px solid var(--copper);
+    border-radius: var(--radius); box-shadow: var(--shadow);
+  }
+  .event .kicker {
+    font-size: 10.5px; font-weight: 700; letter-spacing: .16em;
+    text-transform: uppercase; color: var(--copper); margin-bottom: 10px;
+  }
+  .event .work { font-size: 15px; line-height: 1.45; color: var(--ink); font-weight: 500; }
+  .event .meta { margin-top: 10px; font-size: 13px; color: var(--ink-soft); line-height: 1.55; }
+  .event .badge {
+    display: inline-block; margin-top: 12px; padding: 6px 12px;
+    background: #fbeee3; color: var(--copper);
+    border-radius: 999px; font-size: 12.5px; font-weight: 700; letter-spacing: .02em;
+  }
+
+  /* ---------------- KEYWORDS ---------------- */
+  .chips { display: flex; flex-wrap: wrap; gap: 8px; }
+  .chip {
+    padding: 7px 13px; background: var(--card);
+    border: 1px solid var(--line); border-radius: 999px;
+    font-size: 12.5px; color: var(--ink-soft); font-weight: 500;
+  }
+
+  /* ---------------- LINK ---------------- */
+  .links { display: flex; flex-wrap: wrap; gap: 10px; padding: 30px 24px 0; }
+  .link-btn {
+    flex: 1 1 calc(50% - 5px);
+    display: flex; align-items: center; justify-content: center; gap: 9px;
+    padding: 14px 10px; border-radius: var(--radius);
+    background: var(--card); border: 1px solid var(--line);
+    color: var(--ink); text-decoration: none;
+    font-size: 13px; font-weight: 600;
+    transition: background .15s ease, transform .1s ease;
+  }
+  .link-btn:active { transform: translateY(1px); background: var(--accent-wash); }
+  .link-btn .ico { width: 20px; height: 20px; display: grid; place-items: center; color: var(--accent-deep); }
+
+  /* ---------------- FOOTER ---------------- */
+  .footer {
+    text-align: center; margin-top: 34px; padding: 0 24px;
+    font-size: 11px; letter-spacing: .06em; color: var(--ink-faded); line-height: 1.7;
+  }
+  .footer .divider { width: 32px; height: 1px; background: var(--line); margin: 0 auto 14px; }
+
+  .toast {
+    position: fixed; left: 50%; bottom: 26px; transform: translateX(-50%) translateY(20px);
+    background: var(--ink); color: #fff; padding: 11px 20px; border-radius: 999px;
+    font-size: 13px; font-weight: 500; opacity: 0; pointer-events: none;
+    transition: opacity .2s ease, transform .2s ease; z-index: 50;
+  }
+  .toast.show { opacity: 1; transform: translateX(-50%) translateY(0); }
+
+  @media (prefers-reduced-motion: reduce) { * { transition: none !important; } }
+</style>
+</head>
+<body>
+  <main class="page">
+    <nav class="switch" id="switch" role="tablist" hidden></nav>
+    <div id="profilo"></div>
+    <div class="toast" id="toast"></div>
+  </main>
+
+<script>
+/* =============================================================================
+   CONFIGURAZIONE — è l'unico blocco da modificare.
+   Profilo e vCard leggono gli STESSI dati, quindi non possono divergere.
+   Un campo lasciato a stringa vuota semplicemente non viene mostrato.
+   ============================================================================= */
+
+const CONFIG = {
+  // false = pagina a profilo singolo (solo Fabio). Metti true solo DOPO
+  // che la prof. Vitale ha acconsentito a comparire con i suoi recapiti.
+  doppioProfilo: false,
+  attivo: 'fabio'
+};
+
+/* Blocco congresso. Metti a null dopo il 10 settembre per farlo sparire. */
+const EVENTO = {
+  kicker: 'In questo momento',
+  lavoro: 'LINK: a circuit-based framework integrating habitat suitability and cadastral fragmentation for urban wildlife corridor prioritisation',
+  meta: 'XXXV Congresso nazionale della Società Italiana di Ecologia<br>Genova, 7-10 settembre 2026',
+  badge: 'Poster n. 88'
+};
+
+const PROFILI = {
+
+  fabio: {
+    id: 'fabio',
+    tab: 'Fabio Mennillo',
+    iniziali: 'FM',
+    foto: 'fabio.jpg',                          // es. 'fabio.jpg' accanto a index.html
+    saluto: '',                        // es. 'Dott.' dopo la laurea
+    nome: 'Fabio',
+    cognome: 'Mennillo',
+    ruolo: '',   // <-- il tuo titolo, come vuoi comparire
+    sottotitolo: 'Connettività ecologica urbana<br>Modelli di distribuzione e teoria dei circuiti',
+    ente: 'Università di Napoli Federico II',
+    organizzazione: 'Dipartimento di Biologia, Università di Napoli Federico II',
+    contatti: [
+      { tipo: 'email',    lbl: 'Email',    val: 'fa.mennillo@studenti.unina.it' },
+
+      /* ---- SOSTITUISCI IL NUMERO QUI SOTTO, in tutti e due i punti ----
+         Il primo campo è quello mostrato e quello che finisce nella vCard.
+         Il secondo è il link WhatsApp: stesso numero, senza spazi e senza +. */
+      { tipo: 'telefono', lbl: 'Telefono', val: '+39 XXX XXX XXXX' },
+      { tipo: 'whatsapp', lbl: 'WhatsApp', val: 'Scrivi un messaggio',
+        url: 'https://wa.me/39XXXXXXXXXX' },
+      { tipo: 'luogo',    lbl: 'Dipartimento',
+        val: 'Dipartimento di Biologia<br>Complesso Universitario di Monte Sant\'Angelo<br>Via Cinthia 21, 80126 Napoli',
+        url: 'https://maps.google.com/?q=Complesso+Universitario+Monte+Sant+Angelo+Napoli' }
+    ],
+    keywords: ['Connettività ecologica', 'Species distribution models',
+               'Teoria dei circuiti', 'Frammentazione fondiaria',
+               'Ecologia urbana'],
+    link: [
+      { tipo: 'linkedin',  lbl: 'LinkedIn',  url: 'https://www.linkedin.com/in/fmennillo/' },        // <-- incolla l'URL
+      { tipo: 'orcid',     lbl: 'ORCID',     url: '' },
+      { tipo: 'github',    lbl: 'GitHub',    url: '' },
+      { tipo: 'documento', lbl: 'Abstract',  url: '' }         // PDF accanto a index.html
+    ],
+    nota: 'Conosciuto al Congresso SItE 2026, Genova'
+  }
+
+};   /* <-- questa graffa chiude PROFILI. Se la togli, la pagina resta bianca. */
+
+/* =============================================================================
+   Da qui in giù non serve toccare niente.
+   ============================================================================= */
+
+const ICONE = {
+  email:    '<path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/>',
+  telefono: '<path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.13.96.36 1.9.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.91.34 1.85.57 2.81.7A2 2 0 0 1 22 16.92z"/>',
+  luogo:    '<path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/>',
+  whatsapp: '<path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8z"/>',
+  sito:     '<circle cx="12" cy="12" r="10"/><line x1="2" y1="12" x2="22" y2="12"/><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/>',
+  documento:'<path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/>',
+  linkedin: '<path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-4 0v7h-4v-7a6 6 0 0 1 6-6z"/><rect x="2" y="9" width="4" height="12"/><circle cx="4" cy="4" r="2"/>',
+  github:   '<path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/>',
+  orcid:    '<circle cx="12" cy="12" r="10"/><line x1="8" y1="8" x2="8" y2="8"/><line x1="8" y1="11" x2="8" y2="17"/><path d="M12 11h2.5a3 3 0 0 1 0 6H12z"/>'
+};
+
+const svgIco = (tipo, size) =>
+  `<svg width="${size}" height="${size}" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+        stroke-width="2" stroke-linecap="round" stroke-linejoin="round">${ICONE[tipo] || ICONE.sito}</svg>`;
+
+const CHEV = '<svg class="chev" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="9 18 15 12 9 6"/></svg>';
+
+const testo   = html => String(html).replace(/<br\s*\/?>/gi, ' ').replace(/<[^>]+>/g, '').trim();
+const hrefDi  = c => c.tipo === 'email'    ? 'mailto:' + c.val.trim()
+                  : c.tipo === 'telefono'  ? 'tel:' + c.val.replace(/\s/g, '')
+                  : (c.url || '#');
+
+/* ---------- vCard 3.0, con escaping dei caratteri riservati ---------- */
+function esc(v) {
+  return String(v == null ? '' : v)
+    .replace(/\\/g, '\\\\').replace(/;/g, '\\;')
+    .replace(/,/g, '\\,').replace(/\r?\n/g, '\\n');
+}
+
+function costruisciVCard(p) {
+  const email = (p.contatti.find(c => c.tipo === 'email')    || {}).val || '';
+  const tel   = (p.contatti.find(c => c.tipo === 'telefono') || {}).val || '';
+  const sito  = (p.link.find(l => l.url && /linkedin|orcid|github/.test(l.tipo)) || {}).url || '';
+  const nomeCompleto = [p.saluto, p.nome, p.cognome].filter(Boolean).join(' ');
+
+  const righe = ['BEGIN:VCARD', 'VERSION:3.0',
+    `N:${esc(p.cognome)};${esc(p.nome)};;${esc(p.saluto)};`,
+    `FN:${esc(nomeCompleto)}`,
+    `ORG:${esc(p.organizzazione)}`,
+    `TITLE:${esc(p.ruolo)}`];
+
+  if (email) righe.push(`EMAIL;TYPE=INTERNET,WORK:${esc(email.trim())}`);
+  if (tel)   righe.push(`TEL;TYPE=CELL,VOICE:${esc(tel.replace(/\s/g, ''))}`);
+  if (sito)  righe.push(`URL:${esc(sito)}`);
+  if (p.nota) righe.push(`NOTE:${esc(p.nota)}`);
+  righe.push(`REV:${new Date().toISOString()}`, 'END:VCARD');
+  return righe.join('\r\n');
+}
+
+/* data: URL invece di blob: — è la via più affidabile per far aprire
+   la scheda contatto a Safari su iOS, che è la metà di chi scansiona. */
+function urlVCard(testoVcf) {
+  const utf8 = new TextEncoder().encode(testoVcf);
+  let bin = ''; utf8.forEach(b => bin += String.fromCharCode(b));
+  return 'data:text/vcard;charset=utf-8;base64,' + btoa(bin);
+}
+
+function scarica(nomeFile, testoVcf) {
+  const a = document.createElement('a');
+  a.href = urlVCard(testoVcf);
+  a.download = nomeFile;
+  document.body.appendChild(a); a.click(); a.remove();
+  mostraToast('Contatto pronto da salvare');
+}
+
+let timerToast;
+function mostraToast(msg) {
+  const t = document.getElementById('toast');
+  t.textContent = msg; t.classList.add('show');
+  clearTimeout(timerToast);
+  timerToast = setTimeout(() => t.classList.remove('show'), 2200);
+}
+
+/* ---------- rendering ---------- */
+function rendiProfilo(p) {
+  const contatti = p.contatti.filter(c => c.val && c.val.trim());
+  const link     = p.link.filter(l => l.url && l.url.trim());
+
+  /* Se la foto manca o non si carica, si ripiega sulle iniziali invece di
+     mostrare il testo alternativo sbordante dal cerchio. */
+  const avatar = p.foto
+    ? `<img src="${p.foto}" alt="${p.nome} ${p.cognome}"
+            onerror="this.replaceWith(document.createTextNode('${p.iniziali}'))">`
+    : p.iniziali;
+
+  return `
+    <header class="hero">
+      <div class="avatar serif">${avatar}</div>
+      ${p.ruolo ? `<div class="role-tag">${p.ruolo}</div>` : ''}
+      <h1 class="name serif">
+        ${p.saluto ? `<span class="salutation">${p.saluto}</span>` : ''}
+        ${p.nome} ${p.cognome}
+      </h1>
+      ${p.sottotitolo ? `<p class="subtitle">${p.sottotitolo}</p>` : ''}
+      <p class="affil">${p.ente}</p>
+    </header>
+
+    <div class="save-cta">
+      <button class="btn-primary" data-salva="${p.id}">
+        ${svgIco('documento', 18)} Salva contatto
+      </button>
+      ${CONFIG.doppioProfilo ? `<button class="btn-ghost" data-salva="entrambi">Salva entrambi i contatti</button>` : ''}
+    </div>
+
+    ${contatti.length ? `
+    <section class="section">
+      <h2 class="section-title">Contatti</h2>
+      <div class="rows">
+        ${contatti.map(c => `
+          <a class="row" href="${hrefDi(c)}"${c.url ? ' target="_blank" rel="noopener"' : ''}>
+            <span class="ico">${svgIco(c.tipo, 18)}</span>
+            <span class="body">
+              <span class="lbl">${c.lbl}</span>
+              <span class="val">${c.val}</span>
+            </span>
+            ${CHEV}
+          </a>`).join('')}
+      </div>
+    </section>` : ''}
+
+    ${EVENTO ? `
+    <div class="event">
+      <div class="kicker">${EVENTO.kicker}</div>
+      <div class="work">${EVENTO.lavoro}</div>
+      <div class="meta">${EVENTO.meta}</div>
+      <div class="badge">${EVENTO.badge}</div>
+    </div>` : ''}
+
+    ${p.keywords.length ? `
+    <section class="section">
+      <h2 class="section-title">Ambiti di ricerca</h2>
+      <div class="chips">${p.keywords.map(k => `<span class="chip">${k}</span>`).join('')}</div>
+    </section>` : ''}
+
+    ${link.length ? `
+    <div class="links">
+      ${link.map(l => `
+        <a class="link-btn" href="${l.url}" target="_blank" rel="noopener">
+          <span class="ico">${svgIco(l.tipo, 18)}</span>${l.lbl}
+        </a>`).join('')}
+    </div>` : ''}
+
+    <footer class="footer">
+      <div class="divider"></div>
+      ${[p.saluto, p.nome, p.cognome].filter(Boolean).join(' ')}<br>${p.ente}
+    </footer>`;
+}
+
+function mostra(id) {
+  const p = PROFILI[id];
+  if (!p) return;
+  CONFIG.attivo = id;
+  document.getElementById('profilo').innerHTML = rendiProfilo(p);
+  document.title = `${p.nome} ${p.cognome} — Contatti`;
+  document.querySelectorAll('#switch button').forEach(b =>
+    b.setAttribute('aria-selected', String(b.dataset.profilo === id)));
+  window.scrollTo({ top: 0, behavior: 'instant' });
+}
+
+function avvia() {
+  const sw = document.getElementById('switch');
+  if (CONFIG.doppioProfilo) {
+    sw.hidden = false;
+    sw.innerHTML = Object.values(PROFILI).map(p =>
+      `<button role="tab" data-profilo="${p.id}" aria-selected="${p.id === CONFIG.attivo}">${p.tab}</button>`).join('');
+    sw.addEventListener('click', e => {
+      const b = e.target.closest('button');
+      if (b) mostra(b.dataset.profilo);
+    });
+  }
+
+  document.addEventListener('click', e => {
+    const b = e.target.closest('[data-salva]');
+    if (!b) return;
+    const quale = b.dataset.salva;
+    if (quale === 'entrambi') {
+      const vcf = Object.values(PROFILI).map(costruisciVCard).join('\r\n');
+      scarica('contatti-SItE2026.vcf', vcf);
+    } else {
+      const p = PROFILI[quale];
+      scarica(`${p.nome}-${p.cognome}.vcf`, costruisciVCard(p));
+    }
+  });
+
+  mostra(CONFIG.attivo);
+}
+
+avvia();
+</script>
+</body>
+</html>
